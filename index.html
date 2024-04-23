@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afiliación</title>
+  </head>
+  <body>
+    <h1>Vení al Gym!&#128170;&#127995;</h1>
+
+    <form>
+      <fieldset>
+        <legend>&#128587; Datos Personales &#128064;</legend>
+        <div class="mb-10">
+          <label for="nombre">Nombre:*</label>
+        </div>
+        <input class="datos-p" type="text" name="nombre" required />
+
+        <div class="mb-10">
+          <label for="apellido">Apellido:*</label>
+        </div>
+        <input class="datos-p" type="text" name="apellido" required />
+
+        <div class="mb-10">
+          <label for="documento">Documento:*</label>
+        </div>
+        <input class="datos-p" type="text" name="documento" required />
+
+        <div class="mb-10">
+          <label for="nacionalidad">Nacionalidad:*</label>
+        </div>
+
+        <div class="mb-10">
+          <select
+            class="datos-paias"
+            name="values-option"
+            id="nacionalidad"
+            required
+          >
+            <option values="values-option0">- Seleccionar -</option>
+            <option values="values-option1">Argentina</option>
+            <option values="values-option2">Brasileña</option>
+            <option values="values-option3">Uruguaya</option>
+            <option values="values-option4">Otra</option>
+          </select>
+        </div>
+
+        <div class="mb-10">
+          <label for="lbl-descripcion">Contanos un poco de vos...</label>
+        </div>
+        <textarea
+          class="desc"
+          name="descripcion"
+          id="lbl-descripcion"
+          cols="54"
+          rows="5"
+        >
+        </textarea>
+
+        <p class="p-1">Sexo:*</p>
+        <label>
+          <input type="radio" id="Femenino" value="Femenino" />
+          Femenino
+        </label>
+        <label>
+          <input type="radio" id="masculino" value="masculino" />
+          Masculino
+        </label>
+        <label>
+          <input type="radio" id="otro" value="otro" />
+          Otro
+        </label>
+      </fieldset>
+    </form>
+    <div>
+      <p class="division">
+        &#x26AA;&#x26AA;&#x26AA;&#x26AA;&#x26AA;&#x26AA;&#x26AA;&#x26AA;&#x26AA;&#x26AA;&#x26AA;
+      </p>
+    </div>
+
+    <form>
+      <fieldset>
+        <legend>&#128241; Datos de Contacto &#128231;</legend>
+        <div class="mb-10">
+          <label for="telefono">Telefóno:</label>
+        </div>
+        <input
+          class="datos-c"
+          type="text"
+          name="telefono"
+          placeholder="Código de área y número"
+        />
+        <div class="mb-10">
+          <label for="mail">Dirección de correo electrónico:*</label>
+        </div>
+        <input
+          class="datos-c"
+          type="text"
+          name="mail"
+          placeholder="Ej: mail@gmail.com"
+        />
+      </fieldset>
+    </form>
+    <div>
+      <p class="division">
+        &#x26AA;&#x26AA;&#x26AA;&#x26AA;&#x26AA;&#x26AA;&#x26AA;&#x26AA;&#x26AA;&#x26AA;&#x26AA;
+      </p>
+    </div>
+
+    <form>
+      <fieldset>
+        <legend>&#128692;Actividades &#129336;</legend>
+        <p class="ai">Por favor, indicá cuáles actividades te interesan.</p>
+
+        <p>Sede Palermo:</p>
+
+        <div class="mt-15">
+          <input
+            type="checkbox"
+            id="basquet"
+            name="deporte-fav-1"
+            value="basquet"
+          />
+          <label for="basquet">Básquet</label>
+
+          <input type="checkbox" id="box" name="deporte-fav-2" value="box" />
+          <label for="box">Boxeo</label>
+
+          <input
+            type="checkbox"
+            id="futbol"
+            name="deporte-fav-3"
+            value="futbol"
+          />
+          <label for="futbol">Fútbol</label>
+
+          <input
+            type="checkbox"
+            id="tenis"
+            name="deporte-fav-4"
+            value="tenis"
+          />
+          <label for="tenis">Tenis</label>
+        </div>
+
+        <p>Sede Rosario:</p>
+
+        <div class="mt-15">
+          <input
+            type="checkbox"
+            id="basquet"
+            name="deporte-fav-1"
+            value="basquet"
+          />
+          <label for="basquet">Básquet</label>
+
+          <input
+            type="checkbox"
+            id="futbol"
+            name="deporte-fav-3"
+            value="futbol"
+          />
+          <label for="futbol">Fútbol</label>
+
+          <input
+            type="checkbox"
+            id="rugby"
+            name="deporte-fav-5"
+            value="rugby"
+          />
+          <label for="rugby">Rugby</label>
+
+          <input
+            type="checkbox"
+            id="voley"
+            name="deporte-fav-6"
+            value="voley"
+          />
+          <label for="voley">Voley</label>
+        </div>
+      </fieldset>
+
+      <div class="cnd">
+        <input
+          type="checkbox"
+          id="acepto"
+          name="acepto-condic"
+          value="acepto"
+          required
+        />
+        <label for="acepto">Acepto las condiciones*</label>
+      </div>
+
+      <div class="nov">
+        <input
+          type="checkbox"
+          id="novedades"
+          name="acepto-novedades"
+          value="novedades"
+        />
+        <label for="novedades">Deseo Recibir novedades</label>
+      </div>
+      <p class="campo">*: campo obligatorio</p>
+
+      <button class="boton1">Iniciar afiliación</button>
+      <button class="boton2">Restablecer</button>
+    </form>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
